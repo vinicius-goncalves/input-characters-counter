@@ -46,7 +46,6 @@ body {
 
 #input:focus {
     outline: 1px solid  #2471ff;
-    a: #15a028;
     box-shadow: 1px 1px 35px #00000021;
 }
 #input:focus+.uil {
