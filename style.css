@@ -21,13 +21,14 @@ body {
 .wrapper {
     width: 100%;
     max-width: 400px;
+    padding: 10px;
 }
 .input-wrapper {
     position: relative;
     margin-bottom: 25px;
 }
 
-#input {
+#username {
     width: 100%;
     max-width: 500px;
     padding: 15px;
@@ -44,25 +45,25 @@ body {
     transition: color 500ms;
 }
 
-#input:focus {
+#username:focus {
     outline: 1px solid  #2471ff;
     box-shadow: 1px 1px 35px #00000021;
 }
-#input:focus+.uil {
+#username:focus+.uil {
     color: #2471ff;
-    border-right: 1px solid #2471ff;
+    border-right: 1px solid #b9b9b9;
 }
 
 label {
     transition: border-left 500ms, color 500ms;
 }
 
-#input:focus ~ label {
-    border-left: 1px solid #2471ff;
+#username:focus ~ label {
+    border-left: 1px solid #b9b9b9;
     color: #2471ff;
 }
 
-.uil {
+.uil:not(.uil-check) {
     position: absolute;
     top: 9px;
     left: 10px;
@@ -81,4 +82,3 @@ label {
     font-size: 22px;
     color: #b9b9b9;
 }
-
