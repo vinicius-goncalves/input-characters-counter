@@ -1,4 +1,4 @@
-### Input Characters Count
+# Input Characters Count
 
 Demostração de um contador de caracteres.
 
