@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="input-wrapper">
+                <input type="text" id="input" autocomplete="off" placeholder="Username" min="6" maxlength="16">
+                <i class="uil uil-at"></i>
+                <label>0</label>
+            </div>
+        </div>
+    </body>
+    <script>
+
+        const label = document.querySelector('label')
+
+        input.addEventListener('input', (event) => {
+
+            label.textContent = input.maxLength - input.value.length
+
+            // label.textContent = label.textContent.length - input.maxlength
+
+            if(input.value.length < input.min) {
+               console.log('É necessário 6 dígitos')
+               document.getElementsByTagName('body')[0].style.backgroundColor = '#2471ff'
+               label.style.color = 'red'
+            }else {
+                console.log('Sucesso')
+                document.getElementsByTagName('body')[0].style.backgroundColor = '#15a066'
+                label.style.color = 'sucess'
+            }
+        }) 
+    </script>
+</html>
